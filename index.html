@@ -21,6 +21,7 @@
          <!--<link rel="stylesheet" href="css/material.css">-->
          <link rel="stylesheet" href="css/milligram.css">
         <link rel="stylesheet" href="css/main2.css">
+        <!--<link rel="stylesheet" href="css/main.css">-->
 
         <script src="js/modernizr-custom.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700|Roboto+Condensed" rel="stylesheet">
@@ -39,10 +40,10 @@
          </div>
          <div class="menu">
               <ul>
-                <li class="active" ><a href="/" data-section="home" class="home">Home</a><div class="border"></div></li>
-                <li><a href="#about"  data-section="about" class="about">about</a><div class="border"></div></li>
-                <li><a href="#our-work" data-section="our-work" class="our-work">our work</a><div class="border"></div></li>
-                <li class="last"><a href="#contact" data-section="contact" class="contact">contact</a><div class="border"></div></li>
+                <li class="active" ><a href="/" data-section="home">Home</a><div class="border"></div></li>
+                <li><a href="#about"  data-section="about">about</a><div class="border"></div></li>
+                <li><a href="#our-work" data-section="our-work" id="our-work">our work</a><div class="border"></div></li>
+                <li class="last"><a href="#contact" data-section="contact" id="contact">contact</a><div class="border"></div></li>
             </ul> 
         </div>
        
@@ -96,11 +97,11 @@
       </section>
 <!-- End About Section -->
 
-      <section class="overlay our-work container-full-width" id="our-work"> 
-          <div class="angle"></div>
-      <h1>Our Work</h1>
+      <section class="overlay our-work container-fluid" id="our-work"> 
+          <!--<div class="angle"></div>-->
+      <!--<h1>Our Work</h1>-->
 
-    <div class="work row padding5">
+    <div class="work row row-center">
         <div class="column">
             <img src="img/macbook.png" class="easing">
         </div>
@@ -141,18 +142,13 @@
 
 
 <!--CODE -->
-<div class="work row padding4 back-color-dark">
-
-
-
-    
+<!--<div class="work row padding4 back-color-dark">
 
     <div class="column responsive pad5">
         <div class="flex-wrap row col-reverse easing-faster">
       
             <div class="column column-40 responsive dark">
         <h2 class="easing-faster">Centralia Square</h2>
-        <!-- <a href="#" class="button" id="csquare">More Info</a> -->
         
 
               <p>Centralia Square had one goal in mind: a site that would capture the charm and beauty of their vintage event venue. We created a fully responsive design with retina compatible images. We also developed a custom backend allowing them to easily manage all aspects of the site-from rooms, to testimonials, and pricing pages.</p>
@@ -172,7 +168,7 @@
         <div class="column text-center phone">
         <img src="img/smartphone2.png" class="easing">
     </div>
-        </div> <!-- row -->
+  </div>  row -->
     </div>
 
 </div>
@@ -221,9 +217,10 @@ END CODE
 
       
       <section class="overlay contact" id="contact">
-          <div class="inner-wrap vert-center">
-          <h1>Contact Us</h1>
-          <div class="row clearfix pad5 margin5">
+         
+          <!--<h1>Contact Us</h1>-->
+    
+          <div class="row clearfix row-center">
             <div class="column column-10"></div>
               <div class="column white-text contact-left">
                 <h3>Heck Design Studio</h3>
@@ -263,8 +260,9 @@ END CODE
           
              <div class="column column-10"></div>
         </div>
-        </div>
-      </div>
+         
+       </section>
+    
     
   
 

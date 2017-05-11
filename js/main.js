@@ -7,15 +7,15 @@ $(document).ready(function(){
 
 $('.menu  li').click(function(e){
 	e.preventDefault();
-	//console.log('click');
+	console.log('click');
 	//console.log($(this).attr('data-section'));
 	// $('.overlay').addClass('hide');
-
+  
 	// $('.overlay.show').addClass('previous');
 	// $('.previous').addClass('show2');
 	var data = e.target.getAttribute('data-section');
      if($(this).attr('data-section') == 'home'){
-       $('.menu li').removeClass('active');
+      $('.menu li').removeClass('active');
       $(this).addClass('active');
      	$('.overlay').removeClass('show');
      	history.pushState(data,null,'/heck-design3');
@@ -24,6 +24,7 @@ $('.menu  li').click(function(e){
 		  $('.overlay').removeClass('show');
       $('.menu li').removeClass('active');
       $(this).addClass('active');
+      console.log($(this).attr('data-section'));
      	$('.overlay.'+$(this).attr('data-section')).addClass('show');
      	history.pushState(data,null,data);
      	$('.menu').addClass('background');

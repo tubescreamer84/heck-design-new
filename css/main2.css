@@ -261,11 +261,40 @@ MENU
     /*color: #ee5c29 !important;*/
     color: #006D39;
 }
+
+/*********************************************************************************
+Overlays
+*********************************************************************************/
+
+.overlay{
+     position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    /* background: rgba(0,0,0,.85); */
+    z-index: 1;
+    display: flex;
+    transform: translate3d(200%,0,0);
+    /* transition: all 1s ease-in-out !important; */
+    -moz-transition: all .75s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -webkit-transition-timing-function: cubic-bezier(0.5,0,0.3,1);
+    transition-timing-function: cubic-bezier(.5,0,0.3,1);
+}
+/*.hide{  
+    transform: translate3d(200%,0,0);
+
+}*/
+.show {  
+    transform: translate3d(0,0,0);
+    /*z-index: 4;*/
+}
 /*********************************************************************************
 JUMBOTRON
 *********************************************************************************/
 
-.cssvwunit .jumbotron{
+.cssvwunit .overlay,.cssvwunit .jumbotron{
  min-height: 100vh;
 }
 .jumbotron {
@@ -402,8 +431,9 @@ ABOUT
 
 section.about {  
     color: #fff;
-    background: #4c66ae;
-    background: #41858b;
+    /*background: #4c66ae;
+    background: #41858b;*/
+    background: #3C7AA2;
     background-image: url(../img/sayagata-400px-transparent.png);
 }
 
@@ -428,6 +458,13 @@ section.about.overlay
 /*********************************************************************************
 OUR WORK
 *********************************************************************************/
+.our-work{
+    background: #FEB253;
+}
+
+.active #our-work{
+    color:#9D5800;
+}
 .our-work h2 {
     color: #fff;
     color:#a9a9a9;
@@ -444,10 +481,10 @@ OUR WORK
     border-color:#fff;
 }
 
-.overlay.our-work {
+/*.overlay.our-work {
     position: relative;
     overflow: hidden;
-}
+}*/
 
 .more-info {
     display: none;
@@ -513,6 +550,9 @@ OUR WORK
 /*********************************************************************************
 CONTACT
 *********************************************************************************/
+.active #contact{
+    color:#9D2800;
+}
 .hide,.is-hidden{display:none; !important}
 
 #form1 ul{
