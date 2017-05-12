@@ -278,7 +278,7 @@ Overlays
     transform: translate3d(200%,0,0);
     /* transition: all 1s ease-in-out !important; */
     -moz-transition: all .75s ease-in-out;
-    -webkit-transition: all 1s ease-in-out;
+    -webkit-transition: all .75s ease-in-out;
     -webkit-transition-timing-function: cubic-bezier(0.5,0,0.3,1);
     transition-timing-function: cubic-bezier(.5,0,0.3,1);
 }
@@ -370,7 +370,11 @@ header ul li a {
       transition: color .25s ease-in-out;
    -moz-transition: color .25s ease-in-out;
    -webkit-transition: color .25s ease-in-out;
+    /*-webkit-transition-delay: 2s; 
+    transition-delay: 2s;*/
 }
+
+
 
  .scrolling header ul li a:hover{
     color: #8c8c8c;
@@ -454,6 +458,14 @@ section.about.overlay
 
 .about h1{
     margin-bottom:2rem;
+}
+
+.active a#about{
+    color: #063F64;
+}
+
+.spaceneedle{
+    max-width: 10rem;
 }
 /*********************************************************************************
 OUR WORK
@@ -550,7 +562,7 @@ OUR WORK
 /*********************************************************************************
 CONTACT
 *********************************************************************************/
-.active #contact{
+.active a#contact{
     color:#9D2800;
 }
 .hide,.is-hidden{display:none; !important}
@@ -644,8 +656,8 @@ input[type='email']:focus, input[type='number']:focus, input[type='password']:fo
     }
 
     .show .line.one{
-            transform: rotate(45deg);
-    position: absolute;
+        transform: rotate(45deg);
+        position: absolute;
 
     }
 
