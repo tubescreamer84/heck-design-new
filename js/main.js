@@ -18,7 +18,7 @@ $('.menu  li').click(function(e){
       $('.menu li').removeClass('active');
       $(this).addClass('active');
      	$('.overlay').removeClass('show');
-     	history.pushState(data,null,'/heck-design3');
+     	// history.pushState(data,null,'/heck-design3');
      	$('.menu').removeClass('background');
 	 }else{
 		  $('.overlay').removeClass('show');
@@ -26,7 +26,7 @@ $('.menu  li').click(function(e){
       $(this).addClass('active');
       console.log($(this).attr('data-section'));
      	$('.overlay.'+$(this).attr('data-section')).addClass('show');
-     	history.pushState(data,null,data);
+     	// history.pushState(data,null,data);
      	$('.menu').addClass('background');
      }
 	 
@@ -164,7 +164,7 @@ function scrollMe(direction){
     if($(active).next('li').length){
       $('.overlay').removeClass('show');
       $('.'+$(active).next().attr('data-section')).addClass('show');
-      history.pushState($(active).next().attr('data-section'),null,$(active).next().attr('data-section'));
+      // history.pushState($(active).next().attr('data-section'),null,$(active).next().attr('data-section'));
       $(active).removeClass('active');
       $(active).next().addClass('active');
       $('.menu').addClass('background');
@@ -180,10 +180,10 @@ function scrollMe(direction){
        $('.overlay').removeClass('show');
        $('.'+$(active).prev().attr('data-section')).addClass('show');
        if($(active).prev().attr('data-section') == 'home'){
-            history.pushState('',null,'/~Josh/heck-design3/');
+            // history.pushState('',null,'/~Josh/heck-design3/');
               $('.menu').removeClass('background');
        }else{
-        history.pushState($(active).prev().attr('data-section'),null,$(active).prev().attr('data-section'));
+        // history.pushState($(active).prev().attr('data-section'),null,$(active).prev().attr('data-section'));
        }
        
        $(active).removeClass('active')
