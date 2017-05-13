@@ -98,7 +98,10 @@ $('.menu  li').click(function(e){
 
 $('html').bind('mousewheel DOMMouseScroll', function (e) {
     var delta = (e.originalEvent.wheelDelta || -e.originalEvent.detail);
-    console.log(delta);
+    var distance = e.originalEvent.wheelDeltaX;
+    var timer = 250;
+    // console.log('Distance: '+distance)
+    // console.log(delta);
 
     if(locked === true){
       return false;
@@ -106,7 +109,7 @@ $('html').bind('mousewheel DOMMouseScroll', function (e) {
 
     locked = true;
 
-    if (delta < 0) {
+    if (delta < -30) {
          //console.log('You scrolled down');
          scrollMe('down');
         
@@ -115,20 +118,23 @@ $('html').bind('mousewheel DOMMouseScroll', function (e) {
      	// history.pushState('about',null,'about');
      	// $('.menu').addClass('background');
      	// $('a.about').addClass('active');
-    } else if (delta > 0) {
+         
+    } else if (delta > 10) {
         scrollMe('up');
         // console.log('You scrolled up');
    //      $('a.about').removeClass('active');
 			// $('.overlay').removeClass('show');
    //   	history.pushState('',null,'/heck-design3');
    //   	$('.menu').removeClass('background');
+        timer = 500;
     }
 
     clearTimeout(timeout)
     timeout = setTimeout(function(){
       //unlock
       locked = false;
-    },1200)
+    },timer)
+    console.log(timer);
 });
 
 

@@ -98,6 +98,7 @@ h1{
     /* color: #fff; */
     text-align: center;
     margin-bottom: 5rem;
+    margin-top:10rem;
 }
  
 section.overlay{
@@ -227,6 +228,14 @@ MENU
 
 .menu .border {
     width: 0;
+
+     transition: all .35s ease-in-out !important;
+    -moz-transition: all .35s ease-in-out;
+    -webkit-transition: all .35s ease-in-out;
+       -webkit-transition-delay: 750ms;
+    -moz-transition-delay: 750ms;
+    -o-transition-delay: 750ms;
+    transition-delay: 750ms;
 }
 
 .scrolling .menu .active .border {
@@ -237,9 +246,7 @@ MENU
     width: 100%;
     /* width: 0; */
     background: #fff;
-    transition: all .25s ease-in-out !important;
-    -moz-transition: all .25s ease-in-out;
-    -webkit-transition: all .25s ease-in-out;
+   
     text-align: center;
 }
 
@@ -274,7 +281,7 @@ Overlays
     right: 0;
     /* background: rgba(0,0,0,.85); */
     z-index: 1;
-    display: flex;
+    /*display: flex;*/
     transform: translate3d(200%,0,0);
     /* transition: all 1s ease-in-out !important; */
     -moz-transition: all .75s ease-in-out;
@@ -370,6 +377,10 @@ header ul li a {
       transition: color .25s ease-in-out;
    -moz-transition: color .25s ease-in-out;
    -webkit-transition: color .25s ease-in-out;
+          -webkit-transition-delay: 250ms;
+    -moz-transition-delay: 250ms;
+    -o-transition-delay: 250ms;
+    transition-delay: 250ms;
     /*-webkit-transition-delay: 2s; 
     transition-delay: 2s;*/
 }
